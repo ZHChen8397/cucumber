@@ -10,6 +10,14 @@ defineSupportCode(function({ Given, Then, When }) {
   When('I add {int}', function (input) {
     answer = answer + input;
   });
+  When('I add the follow numbers:',function(table){
+    table.raw().forEach(element => {
+      answer+=parseInt(element)
+    });
+    // .map(row => row[0])
+    // .map(v => parseInt(v))
+    // .reduce((current, next) => current + next, answer);
+  })
   Then('I end up with {int}', function (input) {
     assert.equal(answer, input);
   });
