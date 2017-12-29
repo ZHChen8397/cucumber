@@ -1,0 +1,16 @@
+{
+  "name": "test_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cucumber": "cucumber.js --tags 'not @ignore' ./test/e2e/Features -r ./test/e2e/StepDefinition"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^2.3.1"
+  },
+  "dependencies": {}
+}
